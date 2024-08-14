@@ -2,6 +2,8 @@
 
 import Navbar from "@/components/navbar/navbar";
 import Hero from "./hero";
+import Sponsor from "./sponsor";
+
 
 
 const LandingPage = () => {
@@ -9,6 +11,8 @@ const LandingPage = () => {
     <div className="">
         <Navbar />
         <Hero/>
+        <Sponsor/>
+
 
 
     </div> );
