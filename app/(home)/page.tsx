@@ -2,8 +2,7 @@
 
 import Navbar from "@/components/navbar/navbar";
 import Hero from "./hero";
-import Sponsor from "./sponsor";
-
+import Sponsor from "./sponsors";
 
 
 const LandingPage = () => {
