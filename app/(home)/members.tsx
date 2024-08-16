@@ -20,34 +20,34 @@ import {
 
 const tabs = [
   {
-    icon: <PiSparkleLight />,
-    name: "Engineering",
-    image: "/images/Devansh.jpg",
+    icon: <PiBookOpenTextLight />,
+    name: "Conference Chair",
+    image: "/images/student.jpg",
   },
   {
     icon: <PiBookOpenTextLight />,
-    name: "Design",
-    image: "/images/Devansh.jpg",
+    name: "Conference Co-Chair",
+    image: "/images/teacher.jpg",
   },
   {
-    icon: <PiRocketLaunchFill />,
-    name: "Product",
-    image: "/images/Devansh.jpg",
+    icon: <PiBookOpenTextLight />,
+    name: "Organizing Chair",
+    image: "/images/author.jpg",
   },
   {
-    icon: <PiMegaphoneLight />,
-    name: "Marketing",
-    image: "/images/Devansh.jpg",
+    icon: <PiBookOpenTextLight />,
+    name: "Conference Chair",
+    image: "/images/student.jpg",
   },
   {
-    icon: <PiCompassLight />,
-    name: "Operations",
-    image: "/images/Devansh.jpg",
+    icon: <PiBookOpenTextLight />,
+    name: "Conference Co-Chair",
+    image: "/images/teacher.jpg",
   },
   {
-    icon: <PiHeadset />,
-    name: "HR",
-    image: "/images/Devansh.jpg",
+    icon: <PiBookOpenTextLight />,
+    name: "Organizing Chair",
+    image: "/images/author.jpg",
   },
 ];
 
@@ -59,7 +59,7 @@ const Member = () => {
   return (
     <div className=" relative flex justify-center items-center flex-col px-8 md:px-0 xl:w-3/4 mx-auto 2xl:w-[55%] ">
       <div className="pt-20 lg:pt-0 text-3xl xl:text-5xl font-medium text-center pb-8">
-        Every team, side-by-side
+        Our Commitee, side-by-side
       </div>
 
       <div className="grid grid-cols-4  md:grid-cols-6 md:row-span-1  gap-4  xl:gap-6 mt-8   xl:px-0  ">
@@ -91,7 +91,6 @@ const Member = () => {
         ))}
       </div>
 
-      {/* Display content based on the active tab */}
       <div className="py-10   lg:px-16 xl:px-0 md:px-16  w-full ">
         {activeTab && (
           <div className=" flex justify-center items-center flex-col  ">
