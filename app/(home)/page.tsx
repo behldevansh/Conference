@@ -2,7 +2,9 @@
 
 import Navbar from "@/components/navbar/navbar";
 import Hero from "./hero";
-import Sponsor from "./sponsors";
+import Sponsor from "./sponsor";
+import Submission from "./submission";
+import Member from "./members";
 
 
 const LandingPage = () => {
@@ -11,6 +13,8 @@ const LandingPage = () => {
         <Navbar />
         <Hero/>
         <Sponsor/>
+        <Submission/>
+        <Member/>
 
 
 

@@ -121,7 +121,8 @@ const Hero = () => {
             mx-auto
             "
         >
-          Welcome to Confluence-2024:14th International Conference on Cloud Computing, Data Science & Engineering
+          Welcome to 3rd International Conference on Signals,
+          Machines and Automation (SIGMA-24)
         </p>
 
         <div className="flex gap-4 pt-6 items-center justify-center">
