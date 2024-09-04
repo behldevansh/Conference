@@ -1,0 +1,58 @@
+% Bode Plot
+m = 1000;
+b = 50;
+u = 500;
+%Kp = 1;
+s = tf('s');
+P_cruise = 1/(m*s+b);
+C = Kp;
+%step(u*C*P_cruise)
+%bode(C*P_cruise);
+
+
+
+%Proportional Controller
+r = 10;
+%sys_cl = feedback(C*P_cruise,1);
+%step(r*sys_cl)
+
+sys_cl = feedback(C*P_cruise,1);
+step(r*sys_cl);
+
+%Lag compensator
+Kp = 1000;
+zo = 0.1;
+po = 0.02;
+%C_lag = (s+zo)/(s+po);
+bode(Kp*C_lag*P_cruise);
+sys_cl = feedback(Kp*C_lag*P_cruise,1);
+t = 0:0.1:20;
+step(r*sys_cl,t);
+
+
+%Control design using pole placement
+m = 1000;
+b = 50;
+t = 0:0.1:10;
+u = 500*ones(size(t));
+A = [-b/m];
+B = [1/m];
+C = [1];
+D = [0];
+sys = ss(A,B,C,D);
+x0 = [0];
+p1 = -1.5;
+
+K = place(A,B,[p1])
+sys_cl = ss(A-B*K,B,C,D);
+lsim(sys_cl,u,t,x0);
+axis([0 10 0 0.35])
+K = 1450
+
+Nbar = rscale(sys,K)*10/500;
+sys_cl = ss(A-B*K,B*Nbar,C,D);
+lsim(sys_cl,u,t,x0);
+axis([0 10 0 11])
+
+
+

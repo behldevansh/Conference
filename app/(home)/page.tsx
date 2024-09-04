@@ -5,6 +5,7 @@ import Hero from "./hero";
 import Sponsor from "./sponsor";
 import Submission from "./submission";
 import Member from "./members";
+import Venue from "./venue";
 
 
 const LandingPage = () => {
@@ -15,6 +16,7 @@ const LandingPage = () => {
         <Sponsor/>
         <Submission/>
         <Member/>
+        <Venue/>
 
 
 

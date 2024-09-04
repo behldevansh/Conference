@@ -39,16 +39,6 @@ const tabs = [
     name: "Conference Chair",
     image: "/images/student.jpg",
   },
-  {
-    icon: <PiBookOpenTextLight />,
-    name: "Conference Co-Chair",
-    image: "/images/teacher.jpg",
-  },
-  {
-    icon: <PiBookOpenTextLight />,
-    name: "Organizing Chair",
-    image: "/images/author.jpg",
-  },
 ];
 
 const Member = () => {
@@ -62,7 +52,7 @@ const Member = () => {
         Our Commitee, side-by-side
       </div>
 
-      <div className="grid grid-cols-4  md:grid-cols-6 md:row-span-1  gap-4  xl:gap-6 mt-8   xl:px-0  ">
+      <div className="grid grid-cols-4  md:grid-cols-4 md:row-span-1  gap-4  xl:gap-6 mt-8   xl:px-0  ">
         {tabs.map((tab) => (
           <motion.div
             key={tab.name}

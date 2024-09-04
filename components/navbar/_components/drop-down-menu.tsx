@@ -252,7 +252,7 @@ const DropdownMenu: React.FC<DropDownMenuProps> = ({ onClose }) => {
 
       <div className="pt-12">
         <div className="  space-y-4 flex flex-col px-4">
-          <Link href={"/sign-in"}>
+          <Link href={"/contact"}>
             <Button
               className="
               w-full    "
